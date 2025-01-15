@@ -286,7 +286,7 @@ nav ul li a:hover {
   }
   
   .project-card {
-    background-color: white;
+    background-color: black;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
