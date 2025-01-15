@@ -1,0 +1,440 @@
+      /* Previous styles remain the same */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #121212;
+        color: white;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+/* Navigation styles for desired layout */
+nav {
+    display: flex;
+    justify-content: space-between; /* Push elements apart */
+    align-items: center; /* Center elements vertically */
+    padding: 20px;
+    background-color: #1e1e1e; /* Dark background for better contrast */
+}
+
+.nav-title a {
+    color: #4ecca3;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    color: #4ecca3; /* Highlight color on hover */
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: row; /* Changed to row to align items horizontally */
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* Increased gap between text and image */
+    padding: 0 20px;
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    gap: 20px;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .hero-title span {
+    color: #4ecca3;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+    color: #888;
+    margin: 0;
+    max-width: 400px; /* Limit text width for better readability */
+  }
+  
+
+  .get-in-touch {
+    background-color: #40F298; /* Lighter, more vibrant green */
+    color: black; /* Changed to black text */
+    padding: 10px 28px; /* Adjusted padding to match exact shape */
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 400; /* Regular font weight */
+    letter-spacing: 0.2px;
+    box-shadow: none; /* Removed shadow for flat appearance */
+  }
+  
+  .get-in-touch:hover {
+    background-color: #37d584; /* Slightly darker on hover */
+    transform: none; /* Removed lift effect */
+  }
+  
+  .image-container {
+    width: 300px; /* Increased from 200px */
+    height: 300px; /* Increased from 200px */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #4ecca3;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* Add responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column-reverse;
+      text-align: center;
+      gap: 30px;
+    }
+  
+    .text-content {
+      align-items: center;
+    }
+  
+    .image-container {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+
+  .about-section {
+    background-color: white;
+    color: black;
+    padding: 50px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #000;
+    text-align: center;
+  }
+  
+  .about-title .highlight {
+    color: #40F298;
+  }
+  
+  .about-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-paragraph {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 24px;
+  }
+  
+  .about-paragraph:last-child {
+    margin-bottom: 0;
+  }
+
+  .services-section {
+    background-color: #000;
+    color: white;
+    padding: 80px 20px;
+  }
+  
+  .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .services-title {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: white;
+  }
+  
+  .highlight {
+    color: #40F298;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(64, 242, 152, 0.6);
+  }
+  
+  .icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .service-card h3 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .service-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .experience-card {
+    grid-column: span 2;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .experience-card {
+      grid-column: span 1;
+    }
+    
+    .service-card {
+      padding: 25px;
+    }
+  }
+
+
+  .projects-section {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #40F298;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    color: #37d584;
+  }  
+
+/* Contact Section */
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Title of the contact section */
+.contact-title {
+  font-size: 28px;
+  color: #333; /* Heading color */
+  margin-bottom: 10px;
+}
+
+/* Description under the title */
+.contact-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Container for the contact links */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Style for each individual contact link */
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #333;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 150px; /* Limit width of the button */
+  margin: 10px;
+}
+
+/* Hover effect for contact links */
+.contact-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon style in the contact link */
+.contact-link i {
+  font-size: 22px; /* Adjusted icon size */
+  color: #333; /* Match the heading color */
+  width: 24px; /* Ensure consistent icon size */
+  height: 24px; /* Make sure the icon is square */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Span style (the text part) in the contact link */
+.contact-link span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* If you use images for the icon (for example, Medial Icon), style it like this */
+.contact-link img {
+  width: 20px; /* Set a fixed size for the images */
+  height: 20px; /* Set a fixed size for the images */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+  .google-form-button-container {
+    margin-top: 30px; /* Adds spacing above the button */
+    text-align: center; /* Centers the button */
+  }
+  
+  .google-form-button button {
+    background-color: #05f776; /* Button background color */
+    color: white; /* Text color */
+    font-size: 16px; /* Text size */
+    padding: 12px 25px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Changes cursor to a pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  .google-form-button button:hover {
+    background-color: #05f776; /* Darker shade on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+  }
+  
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #ccc;
+}
